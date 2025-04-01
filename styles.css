@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'TanHarmoni';
+    src: url('./fonts/TAN-Harmoni-Font/TanHarmoni-Regular.otf') format('opentype'),
+         url('./fonts/TAN-Harmoni-Font/TanHarmoni-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GlacialIndifference';
+    src: url('./fonts/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GlacialIndifference';
+    src: url('./fonts/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GlacialIndifference';
+    src: url('./fonts/GlacialIndifference-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+/* Cores principais:
+Vermelho: #FF0000
+Preto: #000000
+Branco: #FFFFFF
+Magenta: #800080
+Rosa: #FFC0CB
+
+Cores complementares:
+Vermelho bordô: #800000
+Marrom: #A52A2A
+Cinza escuro: #696969
+Cinza: #808080
+Cinza claro: #D3D3D3
+ */
+
+:root{
+    --fonte-principal: 'TanHarmoni';
+    --fonte-secundaria: 'GlacialIndifference';
+    --fonte-terciaria: 'Caladea';
+    --fonte-destaque: 'Simonetta';
+    --cor-principal: #000;
+    --cor-secundaria: #800000;
+    --cinza-fundo: #d3d3d3;
+    --cinza-secundario: #696969;
+    --branco: #fff;
+    --magenta: #800080;
+    --marrom: #A52A2A;
+}
+
+body{
+    background-color: var(--cinza-fundo);
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logotipo {
+    font-family: var(--fonte-principal);
+    /* background-color: blueviolet; */
+    font-size: 5em;
+    text-align: left;
+    line-height: 0.8;
+    margin-left: 0.5em;
+    margin-top: 0.4em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 p {
+    padding-left: 20px;
+  }
+  
+  .menu {
+    /* background-color: chartreuse; */
+    padding: 0;
+    width: auto; /* Ajusta a largura automaticamente */
+    margin-top: 10%;
+    margin-right: 1em;
+    order: 1; /* Move o menu para a direita */
+    align-items: center;
+
+  }
+  
+  .menu__lista {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Alinha os itens lado a lado */
+  }
+  
+  .menu__lista__item {
+    margin: 1em 1em 0 1em; /* Espaçamento entre os itens */
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .menu a{
+    font-family: var(--fonte-secundaria);
+    letter-spacing: 0.1em;
+    /* background-color: red; */
+    padding: 0.7em;
+    text-decoration: none;
+    color: var(--cinza-secundario);
+  }
