@@ -63,54 +63,69 @@ body{
 }
 
 .cabecalho {
-    background-color: var(--branco);
     display: flex;
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+    height: 150px; /* Ajuste a altura do header conforme necessário */
   }
   
-  .logotipo {
-    font-family: var(--fonte-principal);
-    /* background-color: blueviolet; */
-    font-size: 5em;
-    text-align: left;
-    line-height: 0.8;
-    margin-left: 0.5em;
-    margin-top: 0.4em;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  .imagem-titulo {
+    position: absolute; /* Permite posicionar a imagem fora do fluxo normal */
+    top: 1em; /* Ajuste a posição vertical conforme necessário */
+    left: 50px; /* Ajuste a posição horizontal conforme necessário */
+    width: 16em; /* Ajuste a largura da imagem conforme necessário */
+    height: 16em; /* Ajuste a altura da imagem conforme necessário */
+    border-radius: 50%; /* Torna a imagem redonda */
+    filter: blur(1px); /* Aplica desfoque à imagem */
+    z-index: -1; /* Coloca a imagem atrás do título */
   }
+
+  .logotipo {
+    position: absolute;
+    bottom: 20%; /* Posiciona o título no meio do header */
+    transform: translateY(50%); /* Ajusta o posicionamento vertical */
+    left: 0.1em;
+    z-index: 1;
+    font-family: var(--fonte-principal);
+    font-size: 3em;
+    text-align: left;
+    margin-left: 0.5em;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    color: var(--cor-secundaria);
+    background-color: red;
+    display: inline;
+  }
+  
+  /* ... outros estilos ... */
   
   h1 p {
     padding-left: 20px;
   }
   
   .menu {
-    /* background-color: chartreuse; */
     padding: 0;
-    width: auto; /* Ajusta a largura automaticamente */
-    margin-top: 10%;
+    width: auto;
+    margin-top: 8%;
     margin-right: 1em;
-    order: 1; /* Move o menu para a direita */
+    order: 1;
     align-items: center;
-
   }
   
   .menu__lista {
     list-style: none;
     padding: 0;
-    display: flex; /* Alinha os itens lado a lado */
+    display: flex;
   }
   
   .menu__lista__item {
-    margin: 1em 1em 0 1em; /* Espaçamento entre os itens */
+    margin: 1em 1em 0 1em;
     font-weight: bold;
     font-size: 1.1em;
   }
-
-  .menu a{
+  
+  .menu a {
     font-family: var(--fonte-secundaria);
     letter-spacing: 0.1em;
-    /* background-color: red; */
     padding: 0.7em;
     text-decoration: none;
     color: var(--cinza-secundario);
