@@ -1,25 +1,11 @@
 @import url(fonts.css);
-/* Cores principais:
-Vermelho: #FF0000
-Preto: #000000
-Branco: #FFFFFF
-Magenta: #800080
-Rosa: #FFC0CB
 
-Cores complementares:
-Vermelho bordô: #800000
-Marrom: #A52A2A
-Cinza escuro: #696969
-Cinza: #808080
-Cinza claro: #D3D3D3
- */
-
-:root{
+:root {
     --fonte-principal: 'TanHarmoni';
     --fonte-secundaria: 'GlacialIndifference';
     --fonte-terciaria: 'Caladea';
     --fonte-destaque: 'Simonetta';
-    --teste: 'Spirax';
+    --fonte-teste: 'Spirax';
     --cor-principal: #000;
     --cor-secundaria: #800000;
     --cinza-fundo: #d3d3d3;
@@ -29,65 +15,101 @@ Cinza claro: #D3D3D3
     --marrom: #A52A2A;
 }
 
-body{
-    background-color: var(--cinza-fundo);
+body {
+    /* background-color: var(--cinza-fundo); */
 }
 
 .cabecalho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative; /* Necessário para o ::before */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* Ajuste conforme necessário */
+  z-index: 1; /* Garante que o conteúdo fique acima do fundo */
+}
 
-  }
-  
-  .logotipo {
+.cabecalho::before {
+  content: ""; /* Necessário para o pseudo-elemento funcionar */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: url(./assets/Laguinho.jpeg) center/cover no-repeat; 
+  filter: blur(3px) brightness(1); /* Desfoque + clareamento */
+  opacity: 0.7; /* Ajuste para mais ou menos transparência */
+  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+.logotipo {
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
     font-size: 6em;
     text-align: center;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 7px rgba(255, 255, 255, 0.897);
     margin-top: 2%;
     border-bottom: solid;
-    border-radius: 8px;
-  }
-  
-  h1 p {
-    padding-left: 20px;
-  }
+    /* border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.514); */
+}
 
-  .menu {
-    margin-top: 3%;
-    padding: 0;
+h1 p {
+    padding-left: 20px;
+}
+
+.menu {
+    margin: 3% 0;
     width: 100%;
-    margin-bottom: 3%;
     align-items: center;
-    font-family: var(--teste);
-    background-color: rgba(255, 255, 255, 0.562);
+    font-family: var(--fonte-teste);
+    background-color: rgba(255, 255, 255, 0.795);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .menu__lista {
+}
+
+.menu__lista {
     list-style: none;
-    display: flex; /* Alinha os itens lado a lado */
-  }
-  
-  .menu__lista__item {
+    display: flex;
+}
+
+.menu__lista__item {
     font-size: 1.4em;
     text-align: center;
     padding: 0.6em;
-  }
+}
 
-  .menu a {
-    letter-spacing: 0.1em;
-    padding: 2em;
-    text-decoration: none;
-    color: var(--cor-principal);
-  }
+.menu a {
+  position: relative;
+  letter-spacing: 0.1em;
+  padding: 2em 2em 0.3em 2em;
+  text-decoration: none;
+  color: var(--cor-principal);
+}
 
-  .contato-flutuante {
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, black 40%, black 60%, transparent);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu a:hover{
+  color: var(--marrom);
+}
+
+.menu a:hover::after {
+  opacity: 1;
+}
+
+.contato-flutuante {
     position: fixed;
-    bottom: 20px; /* Distância do fundo */
-    right: 20px; /* Distância da direita */
+    bottom: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -99,7 +121,7 @@ body{
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #C2185B; /* Magenta da marca */
+    background-color: #C2185B;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background-color 0.3s;
