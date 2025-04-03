@@ -1,0 +1,64 @@
+@import url(../styles.css);
+@import url(../fonts.css);
+
+.card {
+    font-family: var(--fonte-terciaria);
+    width: 50%;
+    margin-left: 20%;
+    font-size: 1.2em;
+    background-color: rgba(163, 0, 0, 0.829);
+    padding: 3em;
+    position: relative; /* Necessário para a imagem ficar posicionada dentro do card */
+    border-radius: 300px;
+}
+
+.card img {
+    width: 11em; /* Mantém o tamanho da imagem */
+    height: 11em;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -50px; /* Ajuste para posicionar a imagem mais acima do card */
+    right: -50px; /* Ajuste para posicionar a imagem mais à direita */
+    border: 5px solid white; /* Opcional: borda para destacar a imagem */
+}
+
+.card h2{
+    font-family: 'PetitFormalScript';
+    font-size: 2em;
+    font-weight: 700;    
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.76);
+}
+
+/* .card b{
+    font-family: var(--fonte-principal);
+    font-size: 4em;
+} */
+
+.descricao__perfil{
+    text-align:inherit;
+    padding-right: 5em;
+    font-family: var(--fonte-secundaria);
+}
+
+
+/* .principais__servicos{
+    font-family: var(--fonte-terciaria);
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.2em;
+}
+
+.principais__servicos h2{
+    font-family: var(--fonte-secundaria);
+    font-size: 2em;
+}
+
+.container{
+    background-color: rgba(255, 0, 242, 0.534);
+    padding: 2em;
+}
+
+.servicos{
+    background-color: rgba(166, 255, 0, 0.5);
+} */
