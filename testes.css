@@ -1,0 +1,35 @@
+/* 1. Fundo de Veludo Vermelho */
+/* .veludo-vermelho {
+    background: url('assets/Vela.jpeg') no-repeat center/cover;
+    filter: brightness(80%) contrast(120%);
+} */
+
+/* 2. Fundo de Luxúria Escarlate
+.luxuria-escarlate {
+    background: url('assets/Salto.jpeg') no-repeat center/cover;
+    filter: brightness(85%) saturate(130%);
+} */
+
+/* 3. Fundo de Mistério e Luz */
+/* .misterio-luz {
+    background: url('assets/Globo.jpeg') no-repeat center/cover;
+    filter: brightness(90%) contrast(110%);
+} */
+
+/* 8. Fundo de Bar Sombrio */
+/* .bar-sombrio {
+    background: url('assets/Bar.jpeg') no-repeat center/cover;
+    filter: brightness(75%) contrast(120%);
+} */
+
+/* 9. Fundo de Magia Líquida */
+/* .magia-liquida {
+    background: url('assets/Laguinho.jpeg') no-repeat center/cover;
+    filter: brightness(95%) saturate(140%);
+} */
+
+/* 10. Fundo de Olhar Hipnótico */
+.olhar-hipnotico {
+    background: url('assets/Cobra.jpeg') no-repeat center/cover;
+    filter: brightness(80%) contrast(125%) hue-rotate(10deg);
+}

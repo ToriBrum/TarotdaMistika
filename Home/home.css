@@ -6,10 +6,11 @@
     width: 50%;
     margin-left: 20%;
     font-size: 1.2em;
-    background-color: rgba(163, 0, 0, 0.829);
+    background-color: rgba(233, 233, 233, 0.829);
     padding: 3em;
     position: relative; /* Necessário para a imagem ficar posicionada dentro do card */
     border-radius: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
@@ -30,35 +31,26 @@
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.76);
 }
 
-/* .card b{
-    font-family: var(--fonte-principal);
-    font-size: 4em;
-} */
-
 .descricao__perfil{
     text-align:inherit;
     padding-right: 5em;
     font-family: var(--fonte-secundaria);
 }
 
-
-/* .principais__servicos{
+.principais__servicos{
+    margin: 1em 11em 0 11em;
     font-family: var(--fonte-terciaria);
-    width: 70%;
-    margin-left: 15%;
-    font-size: 1.2em;
-}
-
-.principais__servicos h2{
-    font-family: var(--fonte-secundaria);
-    font-size: 2em;
+    color: var(--cor-principal);
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 4em;
+    border-radius: 30px;
 }
 
 .container{
-    background-color: rgba(255, 0, 242, 0.534);
-    padding: 2em;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
 }
 
-.servicos{
-    background-color: rgba(166, 255, 0, 0.5);
-} */
+.subtitulo__servicos{
+    font-family: 'PetitFormalScript';
+}
