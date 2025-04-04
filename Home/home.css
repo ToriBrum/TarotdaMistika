@@ -2,39 +2,42 @@
 @import url(../fonts.css);
 
 .card {
-    font-family: var(--fonte-terciaria);
+    font-family: 'Simonetta';
     width: 50%;
     margin-left: 20%;
     font-size: 1.2em;
-    background-color: rgba(233, 233, 233, 0.829);
+    background: rgba(255, 255, 255, 0.699);
     padding: 3em;
     position: relative; /* Necessário para a imagem ficar posicionada dentro do card */
-    border-radius: 300px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 48px 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); /* Sombra escura */
 }
 
 .card img {
     width: 11em; /* Mantém o tamanho da imagem */
     height: 11em;
     border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
     object-fit: cover;
     position: absolute;
     top: -50px; /* Ajuste para posicionar a imagem mais acima do card */
     right: -50px; /* Ajuste para posicionar a imagem mais à direita */
-    border: 5px solid white; /* Opcional: borda para destacar a imagem */
 }
 
 .card h2{
     font-family: 'PetitFormalScript';
     font-size: 2em;
     font-weight: 700;    
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.76);
+    text-shadow:
+    1.5px 1.5px 1.5px rgba(0, 0, 0, 0.603); /* Sombra escura */
 }
 
 .descricao__perfil{
     text-align:inherit;
     padding-right: 5em;
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-terciaria);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);;
 }
 
 .principais__servicos{
@@ -52,5 +55,19 @@
 }
 
 .subtitulo__servicos{
-    font-family: 'PetitFormalScript';
+    font-family: 'Playball';
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 0;
+    background: rgba(244, 0, 0, 0.205);
+    outline-offset: 2px; 
+    padding: 1.3em;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.247);;
+    color: var(--branco);
+    border-radius: 48px;
+}
+
+.titulo__container{
+    font-family: 'Spirax';
+    font-size: 2em;
 }
