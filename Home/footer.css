@@ -1,0 +1,33 @@
+@import url('../fonts.css');
+@import url('../Home/home.css');
+@import url('../styles.css');
+
+.rodape{
+    width: auto;
+    font-family: var(--fonte-terciaria);
+    color: var(--branco);
+    background-color: var(--cinza-secundario);
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;
+}
+
+
+.spotify{
+    overflow: hidden;
+    width: 60%;
+    height: 5em;
+}
+
+.texto__rodape{
+    font-family: 'MySoul';
+    font-size: 2em;
+    padding: 0.5em;
+    border-bottom: solid var(--branco) 2px;
+}
+
+.direitos{
+    font-size: 1.3em;
+}
