@@ -21,42 +21,39 @@ body {
 }
 
 .cabecalho {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 200px; /* Ajuste conforme necessário */
-  padding: 20px 0;
-  background-attachment: fixed;
-  background-size: cover;
-  z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px; /* Ajuste conforme necessário */
+    /* padding: 1em 0; */
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
 }
 
 .cabecalho::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;  
-  width: 100%;
-  height: 65.2%; /* Garante que cubra todo o cabeçalho */
-  background: url('./assets/textura.jpg') center/cover no-repeat; 
-  opacity: 10;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 62%; /* Garante que cubra todo o cabeçalho */
+    background: url('./assets/textura.jpg') center/cover no-repeat;
+    opacity: 10;
+    z-index: -1;
 }
 
 .logotipo {
-  font-family: var(--fonte-principal);
-  color: var(--branco);
-  font-size: 6.5em;
-  text-align: center;
-  text-shadow: 0 2px 5px rgb(0, 0, 0);
-  line-height: normal;
-  /* padding: 10px 0; */
-  border-bottom: solid 2px var(--branco);
-  opacity: 0;
-  animation: fadeIn 1.5s forwards;
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 6em;
+    text-align: center;
+    text-shadow: 0 2px 5px rgb(0, 0, 0);
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -74,53 +71,52 @@ h1 p {
 }
 
 .menu {
-  width: 100%;
-  text-align: center;
-  background-color: rgba(244, 242, 230, 0.822);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(244, 242, 230, 0.822);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .menu__lista {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 6em;
-  padding: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    padding: 0.1em 0;
 }
 
 .menu__lista__item {
-  font-size: 1.5em;
-  padding: 0.5em;
+    font-size: 1.4em;
+    padding: 0.5em;
 }
 
 .menu a {
-  position: relative;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  color: var(--cor-secundaria);
-  font-family: var(--fonte-terciaria);
+    position: relative;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-terciaria);
 }
 
 .menu a::after {
-  content: "";
-  position: absolute;
-  bottom: -0.4em;
-  left: 50%;
-  width: 80%;
-  height: 4px;
-  background: linear-gradient(to right, transparent, black 40%, black 60%, transparent);
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: -0.4em;
+    left: 50%;
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, black 40%, black 60%, transparent);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .menu a:hover{
-  color: var(--magenta);
+    color: var(--magenta);
 }
 
 .menu a:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 .contato-flutuante {
