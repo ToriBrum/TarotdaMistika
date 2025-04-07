@@ -1,0 +1,47 @@
+@import url(../fonts.css);
+@import url(../styles.css);
+
+.apresentacao {
+    margin: 0 8em;
+    font-family: var(--fonte-terciaria);
+    color: var(--cor-principal);
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 4em;
+    border-radius: 30px;
+    line-height: 1.6; /* ligeiramente aumentado para melhor leitura */
+}
+
+.apresentacao h2{
+    font-family: 'PetitFormalScript';
+    font-size: 2em;
+    font-weight: 700;    
+    text-shadow:
+    1.5px 1.5px 1.5px rgba(0, 0, 0, 0.603); /* Sombra escura */
+}
+
+.apresentacao h3.subtitulo {
+    font-size: 1.9em;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.apresentacao h4.subsubtitulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.apresentacao__texto,
+.apresentacao__introducao {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.lista {
+    padding-left: 1.2em;
+    margin-bottom: 1.5em;
+}
